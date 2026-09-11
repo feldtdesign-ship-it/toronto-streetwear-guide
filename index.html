@@ -15,7 +15,7 @@
 :root{
   --ground:#0F1112; --panel:#171A1C; --panel-2:#1F2326; --rule:#2B3034;
   --ink:#EDEAE2; --ink-2:#A9A79F; --muted:#6E6D68;
-  --accent:#FCCC0A; --accent-dim:#8A7212; --accent-ink:#141200;
+  --accent:#EF3340; --accent-dim:#7A1620; --accent-ink:#FFFFFF;
   --sneaker:#4D89C4; --gallery:#C4694D; --vintage:#7FA773;
   --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
   --disp:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
@@ -33,6 +33,8 @@ p{margin:0}
 
 /* masthead */
 .mast{padding:26px 0 18px;border-bottom:1px solid var(--rule);margin-bottom:6px}
+.mast .title-row{display:flex;align-items:center;gap:12px}
+.mast .leaf{flex:0 0 auto;font-size:clamp(30px,7vw,40px);line-height:1}
 .mast h1{font-size:clamp(34px,9vw,48px);font-weight:900;text-transform:uppercase;color:var(--ink)}
 .mast h1 span{color:var(--accent)}
 .mast .dek{margin-top:10px;color:var(--ink-2);font-size:15px;max-width:48ch}
@@ -71,6 +73,7 @@ section.nb .aside b{color:var(--ink);font-weight:600}
 .tag.vintage{border-color:var(--vintage);color:var(--vintage)}
 
 .card .name{font-family:var(--disp);font-size:26px;font-weight:700;color:var(--ink);text-transform:uppercase;line-height:1;margin-top:8px}
+.card .nb{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px}
 .card .vibe{font-size:14.5px;color:var(--ink-2);margin-top:6px}
 .card .flip-hint{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);align-self:flex-end}
 
@@ -92,7 +95,10 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
 <main>
 
   <div class="mast">
-    <h1>Toronto: <span>Streetwear &amp; Art</span></h1>
+    <div class="title-row">
+      <span class="leaf" aria-hidden="true">🍁</span>
+      <h1>Toronto: <span>Streetwear &amp; Art</span></h1>
+    </div>
     <p class="dek">A tip sheet, not a brochure. For the drive up through Niagara — shops and galleries that reward people who actually look at how things are made.</p>
   </div>
 
@@ -115,7 +121,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">Haven</div><p class="vibe">Japanese utility wear, technical outerwear, zero fluff.</p></div>
+            <div><div class="name">Haven</div><p class="nb">Fashion District</p><p class="vibe">Japanese utility wear, technical outerwear, zero fluff.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -142,7 +148,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">Nomad</div><p class="vibe">High fashion crossed with street, Stussy next to Japanese denim.</p></div>
+            <div><div class="name">Nomad</div><p class="nb">Spadina Ave</p><p class="vibe">High fashion crossed with street, Stussy next to Japanese denim.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -159,7 +165,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag vintage">Vintage</span><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">Over the Rainbow</div><p class="vibe">Denim and workwear institution, wall of sneakers.</p></div>
+            <div><div class="name">Over the Rainbow</div><p class="nb">Queen St W</p><p class="vibe">Denim and workwear institution, wall of sneakers.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -176,7 +182,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag sneakers">Sneakers</span><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">NRML</div><p class="vibe">Nike, Jordan, New Balance, Stussy — sneaker-first.</p></div>
+            <div><div class="name">NRML</div><p class="nb">Multiple Locations</p><p class="vibe">Nike, Jordan, New Balance, Stussy — sneaker-first.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -193,7 +199,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">401 Richmond</div><p class="vibe">A warehouse full of small independent galleries and studios.</p></div>
+            <div><div class="name">401 Richmond</div><p class="nb">Queen West</p><p class="vibe">A warehouse full of small independent galleries and studios.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -210,7 +216,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">Art Gallery of Ontario</div><p class="vibe">The big one — strong contemporary collection.</p></div>
+            <div><div class="name">Art Gallery of Ontario</div><p class="nb">Dundas St W</p><p class="vibe">The big one — strong contemporary collection.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -237,7 +243,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag sneakers">Sneakers</span></div>
-            <div><div class="name">Livestock</div><p class="vibe">Spacious, minimal — Nike, New Balance, Asics.</p></div>
+            <div><div class="name">Livestock</div><p class="nb">Ossington Strip</p><p class="vibe">Spacious, minimal — Nike, New Balance, Asics.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -254,7 +260,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag vintage">Vintage</span></div>
-            <div><div class="name">ReLife</div><p class="vibe">Vintage streetwear, graphic tees, Patagonia, bags.</p></div>
+            <div><div class="name">ReLife</div><p class="nb">Near Lansdowne</p><p class="vibe">Vintage streetwear, graphic tees, Patagonia, bags.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -271,7 +277,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">MOCA Toronto</div><p class="vibe">Five floors in an old auto building. First floor's free.</p></div>
+            <div><div class="name">MOCA Toronto</div><p class="nb">Sterling Road</p><p class="vibe">Five floors in an old auto building. First floor's free.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -299,7 +305,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">Kotn</div><p class="vibe">Egyptian cotton basics, calm and design-considered.</p></div>
+            <div><div class="name">Kotn</div><p class="nb">Leslieville</p><p class="vibe">Egyptian cotton basics, calm and design-considered.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -326,7 +332,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">The Power Plant</div><p class="vibe">Free year-round, non-collecting — always fresh.</p></div>
+            <div><div class="name">The Power Plant</div><p class="nb">Harbourfront</p><p class="vibe">Free year-round, non-collecting — always fresh.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
@@ -343,7 +349,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
         <div class="card-inner">
           <div class="face front">
             <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">Distillery District</div><p class="vibe">Cobblestone, galleries, coffee — a whole afternoon.</p></div>
+            <div><div class="name">Distillery District</div><p class="nb">Old Town</p><p class="vibe">Cobblestone, galleries, coffee — a whole afternoon.</p></div>
             <span class="flip-hint">tap for details ↻</span>
           </div>
           <div class="face back">
