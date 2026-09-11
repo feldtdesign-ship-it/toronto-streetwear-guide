@@ -45,11 +45,24 @@ p{margin:0}
 .filters button{flex:0 0 auto;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:var(--panel);color:var(--ink-2);border:1px solid var(--rule);border-radius:999px;padding:10px 16px;min-height:40px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .filters button.active{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
 
-/* jump row */
-.jump{display:flex;gap:6px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:none;margin-bottom:18px}
-.jump::-webkit-scrollbar{display:none}
-.jump a{flex:0 0 auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:6px 10px;border:1px dashed var(--rule);border-radius:4px}
-.jump a:active{color:var(--ink)}
+/* hamburger + drawer */
+.bar{position:sticky;top:0;z-index:20;background:var(--ground);display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+.bar .filters{position:static;border-bottom:0;margin:0;flex:1 1 auto;min-width:0}
+.burger{flex:0 0 auto;width:40px;height:40px;background:var(--panel);border:1px solid var(--rule);border-radius:8px;cursor:pointer;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;padding:0}
+.burger span{display:block;width:18px;height:2px;background:var(--ink);border-radius:1px;transition:transform .2s,opacity .2s}
+body.nav-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+body.nav-open .burger span:nth-child(2){opacity:0}
+body.nav-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:30;opacity:0;pointer-events:none;transition:opacity .2s}
+.drawer{position:fixed;top:0;left:0;bottom:0;width:min(78vw,300px);background:var(--panel);border-right:1px solid var(--rule);z-index:31;transform:translateX(-100%);transition:transform .25s cubic-bezier(.4,.15,.2,1);padding:22px 18px calc(22px + env(safe-area-inset-bottom));overflow-y:auto;display:flex;flex-direction:column}
+body.nav-open .scrim{opacity:1;pointer-events:auto}
+body.nav-open .drawer{transform:translateX(0)}
+body.nav-open{overflow:hidden}
+.drawer .eyebrow{margin-bottom:12px}
+.drawer a{display:block;font-family:var(--disp);font-size:24px;font-weight:700;text-transform:uppercase;color:var(--ink);text-decoration:none;padding:11px 0;border-bottom:1px solid var(--rule);line-height:1}
+.drawer a small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin-top:5px}
+.drawer a:active{color:var(--accent)}
+.drawer .close{margin-top:auto;padding-top:18px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);background:none;border:0;text-align:left;cursor:pointer}
 
 /* neighborhood sections */
 section.nb{margin-bottom:44px;scroll-margin-top:72px}
@@ -110,6 +123,8 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
     <p class="dek">A tip sheet, not a brochure. Shops, record bins, artist markets, galleries, and the photo you'll actually want — for two people who look at how things are made.</p>
   </div>
 
+  <div class="bar">
+  <button class="burger" id="burger" aria-label="Open neighborhood menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
   <div class="filters" role="group" aria-label="Filter by category">
     <button class="active" data-filter="all">All</button>
     <button data-filter="streetwear">Streetwear</button>
@@ -121,9 +136,22 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
     <button data-filter="photo">Photo Ops</button>
     <button data-filter="culture">Culture</button>
   </div>
+  </div>
 
-  <nav class="jump" aria-label="Jump to neighborhood">
-    <a href="#start">Start</a><a href="#kensington">Kensington</a><a href="#spadina">Spadina</a><a href="#queenwest">Queen West</a><a href="#westend">West End</a><a href="#core">Core</a><a href="#water">Waterfront</a><a href="#east">East</a><a href="#scarborough">Scarborough</a><a href="#markets">Markets</a>
+  <div class="scrim" id="scrim"></div>
+  <nav class="drawer" id="drawer" aria-label="Jump to neighborhood">
+    <p class="eyebrow">Jump to</p>
+    <a href="#start">Start Here<small>King St W</small></a>
+    <a href="#kensington">Kensington<small>Vintage · Garden Car · Ped Sundays</small></a>
+    <a href="#spadina">Spadina<small>Record bins · Chinatown</small></a>
+    <a href="#queenwest">Queen West<small>Graffiti Alley · AGO · 401</small></a>
+    <a href="#westend">West End<small>Ossington · Blue Tile · MOCA</small></a>
+    <a href="#core">The Core<small>Stackt · Toronto sign · OVO</small></a>
+    <a href="#water">Waterfront<small>Power Plant · Distillery · Islands</small></a>
+    <a href="#east">East End<small>Leslieville</small></a>
+    <a href="#scarborough">Scarborough<small>Bluffs · Patty Stop</small></a>
+    <a href="#markets">Makers &amp; Markets<small>Weekend tables</small></a>
+    <button class="close" id="drawerClose">✕ Close</button>
   </nav>
 
   <!-- START -->
@@ -492,7 +520,7 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
   </section>
 
   <footer>
-    Tap any card, it flips. Filters up top narrow the list; the dashed row jumps by neighborhood.<br>
+    Tap any card, it flips. Filters up top narrow the list; the menu button jumps by neighborhood.<br>
     IG and TikTok buttons are searches, not verified handles — the scene moves faster than any list. Maps links include reviews and hours.
   </footer>
 
@@ -519,6 +547,27 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
       card.classList.toggle('flipped');
     });
   });
+
+  var burger = document.getElementById('burger');
+  var drawer = document.getElementById('drawer');
+  var scrim = document.getElementById('scrim');
+  function setNav(open){
+    document.body.classList.toggle('nav-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  burger.addEventListener('click', function(){ setNav(!document.body.classList.contains('nav-open')); });
+  scrim.addEventListener('click', function(){ setNav(false); });
+  document.getElementById('drawerClose').addEventListener('click', function(){ setNav(false); });
+  drawer.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var target = document.querySelector(a.getAttribute('href'));
+      setNav(false);
+      history.replaceState(null, '', a.getAttribute('href'));
+      requestAnimationFrame(function(){ target.scrollIntoView({behavior:'smooth', block:'start'}); });
+    });
+  });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setNav(false); });
 
   var buttons = document.querySelectorAll('.filters button');
   buttons.forEach(function(btn){
