@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Toronto: Streetwear &amp; Art</title>
 <meta name="theme-color" content="#0F1112">
-<meta name="description" content="A friend's tip sheet for the drive up through Niagara into Toronto — streetwear, sneakers, vintage, and galleries worth the stop, picked for two working artists.">
+<meta name="description" content="A friend's tip sheet for the drive up through Niagara into Toronto — streetwear, sneakers, vintage, record shops, artist markets, galleries, photo moments, and the GTA's culture, picked for two working artists.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Toronto: Streetwear &amp; Art — A Tip Sheet">
-<meta property="og:description" content="Shops and galleries for PJ and Jillian, driving up through Niagara into Toronto. Design-conscious, not just trendy.">
+<meta property="og:description" content="Shops, record stores, markets, galleries, and photo moments for PJ and Jillian. Craft and curation over hype.">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -16,15 +16,15 @@
   --ground:#0F1112; --panel:#171A1C; --panel-2:#1F2326; --rule:#2B3034;
   --ink:#EDEAE2; --ink-2:#A9A79F; --muted:#6E6D68;
   --accent:#EF3340; --accent-dim:#7A1620; --accent-ink:#FFFFFF;
-  --sneaker:#4D89C4; --gallery:#C4694D; --vintage:#7FA773;
+  --sneaker:#4D89C4; --gallery:#C4694D; --vintage:#7FA773; --records:#B08CD9; --markets:#E0A458; --photo:#5CC0B8; --culture:#EDEAE2;
   --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
   --disp:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
 *{box-sizing:border-box}
-html{background:var(--ground)}
-body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
-main{max-width:720px;margin:0 auto;padding:0 18px 90px}
+html{background:var(--ground);scroll-behavior:smooth}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+main{max-width:760px;margin:0 auto;padding:0 16px 90px}
 a{color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 h1,h2{font-family:var(--disp);margin:0;line-height:.95;text-wrap:balance}
@@ -32,63 +32,71 @@ p{margin:0}
 .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
 /* masthead */
-.mast{padding:26px 0 18px;border-bottom:1px solid var(--rule);margin-bottom:6px}
+.mast{padding:24px 0 16px;border-bottom:1px solid var(--rule)}
 .mast .title-row{display:flex;align-items:center;gap:12px}
 .mast .leaf{flex:0 0 auto;font-size:clamp(30px,7vw,40px);line-height:1}
 .mast h1{font-size:clamp(34px,9vw,48px);font-weight:900;text-transform:uppercase;color:var(--ink)}
 .mast h1 span{color:var(--accent)}
-.mast .dek{margin-top:10px;color:var(--ink-2);font-size:15px;max-width:48ch}
+.mast .dek{margin-top:10px;color:var(--ink-2);font-size:15px;max-width:52ch}
 
 /* sticky filter bar */
-.filters{position:sticky;top:0;z-index:20;background:var(--ground);display:flex;gap:8px;overflow-x:auto;padding:14px 0;border-bottom:1px solid var(--rule);margin-bottom:26px;-webkit-overflow-scrolling:touch}
+.filters{position:sticky;top:0;z-index:20;background:var(--ground);display:flex;gap:8px;overflow-x:auto;padding:12px 0;border-bottom:1px solid var(--rule);-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .filters::-webkit-scrollbar{display:none}
-.filters button{flex:0 0 auto;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:var(--panel);color:var(--ink-2);border:1px solid var(--rule);border-radius:999px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.filters button{flex:0 0 auto;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:var(--panel);color:var(--ink-2);border:1px solid var(--rule);border-radius:999px;padding:10px 16px;min-height:40px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .filters button.active{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
 
+/* jump row */
+.jump{display:flex;gap:6px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:none;margin-bottom:18px}
+.jump::-webkit-scrollbar{display:none}
+.jump a{flex:0 0 auto;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:6px 10px;border:1px dashed var(--rule);border-radius:4px}
+.jump a:active{color:var(--ink)}
+
 /* neighborhood sections */
-section.nb{margin-bottom:44px}
+section.nb{margin-bottom:44px;scroll-margin-top:72px}
 section.nb .eyebrow{margin-bottom:6px}
 section.nb h2{font-size:26px;font-weight:700;text-transform:uppercase;color:var(--ink);margin-bottom:8px}
-section.nb .intro{color:var(--ink-2);font-size:15px;max-width:56ch;margin-bottom:18px}
-section.nb .aside{margin-top:16px;padding:14px 16px;background:var(--panel);border-left:2px solid var(--accent-dim);font-size:14.5px;color:var(--ink-2)}
+section.nb .intro{color:var(--ink-2);font-size:15px;max-width:56ch;margin-bottom:16px}
+section.nb .aside{margin-top:14px;padding:14px 16px;background:var(--panel);border-left:2px solid var(--accent-dim);font-size:14.5px;color:var(--ink-2)}
 section.nb .aside b{color:var(--ink);font-weight:600}
 
 /* card grid */
 .grid{display:grid;grid-template-columns:1fr;gap:12px}
 
-/* flip card */
-.card{position:relative;height:190px;perspective:1200px}
+/* flip card — grid-stacked faces so height follows the taller side */
+.card{perspective:1200px}
 .card.hidden{display:none}
-.card-inner{position:relative;width:100%;height:100%;transition:transform .5s cubic-bezier(.4,.15,.2,1);transform-style:preserve-3d;cursor:pointer}
+.card-inner{display:grid;transition:transform .5s cubic-bezier(.4,.15,.2,1);transform-style:preserve-3d;cursor:pointer;min-height:176px}
 .card.flipped .card-inner{transform:rotateY(180deg)}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:18px}
-.face.front{display:flex;flex-direction:column;justify-content:space-between}
-.face.back{transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:space-between;background:var(--panel-2)}
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:16px;display:flex;flex-direction:column;justify-content:space-between;gap:10px}
+.face.back{transform:rotateY(180deg);background:var(--panel-2)}
 
-.card .tags{display:flex;gap:6px;flex-wrap:wrap}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2)}
 .tag.streetwear{border-color:var(--accent-dim);color:var(--accent)}
 .tag.sneakers{border-color:var(--sneaker);color:var(--sneaker)}
 .tag.galleries{border-color:var(--gallery);color:var(--gallery)}
 .tag.vintage{border-color:var(--vintage);color:var(--vintage)}
+.tag.records{border-color:var(--records);color:var(--records)}
+.tag.markets{border-color:var(--markets);color:var(--markets)}
+.tag.photo{border-color:var(--photo);color:var(--photo)}
+.tag.culture{border-color:var(--ink-2);color:var(--ink)}
 
-.card .name{font-family:var(--disp);font-size:26px;font-weight:700;color:var(--ink);text-transform:uppercase;line-height:1;margin-top:8px}
-.card .nb{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px}
-.card .vibe{font-size:14.5px;color:var(--ink-2);margin-top:6px}
-.card .flip-hint{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);align-self:flex-end}
+.name{font-family:var(--disp);font-size:26px;font-weight:700;color:var(--ink);text-transform:uppercase;line-height:1;margin-top:6px}
+.nb-lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.vibe{font-size:14.5px;color:var(--ink-2);margin-top:6px}
+.flip-hint{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);align-self:flex-end}
 
-.card .addr{font-family:var(--mono);font-size:12px;color:var(--ink-2);letter-spacing:.02em}
-.card .why{font-size:14px;color:var(--ink);line-height:1.4;margin-top:8px}
-.card .why b{color:var(--accent);font-weight:600}
-.card .links{display:flex;gap:14px;margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)}
-.card .links a{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
-.card .links a:hover{text-decoration:underline}
+.addr{font-family:var(--mono);font-size:12px;color:var(--ink-2);letter-spacing:.02em}
+.why{font-size:14px;color:var(--ink);line-height:1.45;margin-top:6px}
+.why b{color:var(--accent);font-weight:600}
+.links{display:flex;gap:8px;flex-wrap:wrap;padding-top:10px;border-top:1px solid var(--rule)}
+.links a{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:8px 10px;border:1px solid var(--rule);border-radius:4px;color:var(--ink);min-height:36px;display:inline-flex;align-items:center}
+.links a.maps{border-color:var(--accent-dim);color:var(--accent)}
+.links a:active{background:var(--panel)}
 
-footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.06em}
+footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.06em;line-height:1.7}
 
-@media (min-width:600px){
-  .grid{grid-template-columns:1fr 1fr}
-}
+@media (min-width:600px){ .grid{grid-template-columns:1fr 1fr} }
 </style>
 </head>
 <body>
@@ -99,274 +107,393 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
       <span class="leaf" aria-hidden="true">🍁</span>
       <h1>Toronto: <span>Streetwear &amp; Art</span></h1>
     </div>
-    <p class="dek">A tip sheet, not a brochure. For the drive up through Niagara — shops and galleries that reward people who actually look at how things are made.</p>
+    <p class="dek">A tip sheet, not a brochure. Shops, record bins, artist markets, galleries, and the photo you'll actually want — for two people who look at how things are made.</p>
   </div>
 
   <div class="filters" role="group" aria-label="Filter by category">
     <button class="active" data-filter="all">All</button>
     <button data-filter="streetwear">Streetwear</button>
     <button data-filter="sneakers">Sneakers</button>
-    <button data-filter="galleries">Galleries</button>
     <button data-filter="vintage">Vintage</button>
+    <button data-filter="records">Records</button>
+    <button data-filter="markets">Markets</button>
+    <button data-filter="galleries">Galleries</button>
+    <button data-filter="photo">Photo Ops</button>
+    <button data-filter="culture">Culture</button>
   </div>
 
-  <!-- FASHION DISTRICT -->
-  <section class="nb">
+  <nav class="jump" aria-label="Jump to neighborhood">
+    <a href="#start">Start</a><a href="#kensington">Kensington</a><a href="#spadina">Spadina</a><a href="#queenwest">Queen West</a><a href="#westend">West End</a><a href="#core">Core</a><a href="#water">Waterfront</a><a href="#east">East</a><a href="#scarborough">Scarborough</a><a href="#markets">Markets</a>
+  </nav>
+
+  <!-- START -->
+  <section class="nb" id="start">
     <p class="eyebrow">King St W · Fashion District</p>
     <h2>Start Here</h2>
     <p class="intro">If you only hit one shop, make it this one — everything else in town gets compared to it.</p>
     <div class="grid">
-
-      <div class="card" data-cat="streetwear">
+      <div class="card" data-cat="streetwear" data-maps="Haven 587 King St W Toronto" data-social="Haven Toronto">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">Haven</div><p class="nb">Fashion District</p><p class="vibe">Japanese utility wear, technical outerwear, zero fluff.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">587 King St W, Toronto</div>
-            <p class="why">Fabrication-obsessed in a way that reads more like an engineering shop than a boutique. <b>Made for the design-nerd in the room</b> — seam construction, fabric sourcing, the whole point of the garment is visible if you look.</p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=Haven%20587%20King%20St%20W%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag streetwear">Streetwear</span></div><div><div class="name">Haven</div><p class="nb-lbl">Fashion District</p><p class="vibe">Japanese utility wear, technical outerwear, zero fluff.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">587 King St W</div><p class="why">Fabrication-obsessed in a way that reads more like an engineering shop than a boutique. <b>Made for the design-nerd in the room</b> — seam construction, fabric sourcing, the whole point of the garment is visible if you look.</p></div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- QUEEN WEST / CHINATOWN / DOWNTOWN CORE -->
-  <section class="nb">
-    <p class="eyebrow">Queen St W · Spadina · Chinatown</p>
-    <h2>Downtown Core</h2>
-    <p class="intro">Walkable strip — denim, high-low menswear, an artist-run warehouse, and the big museum, all within a fifteen-minute wander of each other.</p>
+  <!-- KENSINGTON -->
+  <section class="nb" id="kensington">
+    <p class="eyebrow">Kensington Market · Car-free last Sundays</p>
+    <h2>Kensington</h2>
+    <p class="intro">The neighborhood that raised half of Toronto's weirdos. Vintage since 1975, murals on every wall, a car with a garden in it. Walk it slow.</p>
     <div class="grid">
 
-      <div class="card" data-cat="streetwear">
+      <div class="card" data-cat="vintage" data-maps="Courage My Love 14 Kensington Ave Toronto" data-social="Courage My Love Kensington">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">Nomad</div><p class="nb">Spadina Ave</p><p class="vibe">High fashion crossed with street, Stussy next to Japanese denim.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">310 Spadina Ave, Toronto</div>
-            <p class="why">Elevated menswear that doesn't pick a lane — tailored outerwear racked next to skate labels. <b>Good for seeing how curation itself is a craft</b>, not just what's trending this month.</p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=Nomad%20310%20Spadina%20Ave%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag vintage">Vintage</span></div><div><div class="name">Courage My Love</div><p class="nb-lbl">Kensington Ave</p><p class="vibe">Turquoise Victorian house, vintage since 1975, legendary $5 rack.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">14 Kensington Ave</div><p class="why">Beads, antique jewelry, coloured glass, remade vintage. <b>Raw material for people who make things</b> — this is where you find the one button, the one clasp.</p></div>
         </div>
       </div>
 
-      <div class="card" data-cat="vintage streetwear sneakers">
+      <div class="card" data-cat="vintage" data-maps="Exile Vintage Kensington Market Toronto" data-social="Exile Vintage Toronto">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag vintage">Vintage</span><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">Over the Rainbow</div><p class="nb">Queen St W</p><p class="vibe">Denim and workwear institution, wall of sneakers.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">Queen St W, Toronto</div>
-            <p class="why">Been doing raw denim and workwear since before it was a trend cycle — the kind of place that can tell you why a selvedge seam is cut the way it is. <b>Craft history you can hold.</b></p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=Over%20the%20Rainbow%20Queen%20Street%20West%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag vintage">Vintage</span></div><div><div class="name">Exile</div><p class="nb-lbl">Kensington Market</p><p class="vibe">Band tees, leather jackets, rock-and-roll wardrobe since '75.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Kensington Market</div><p class="why">"Kensington's vintage and costume mecca." Leather, denim, and <b>graphic tees with actual history on them</b> — print quality you can study up close.</p></div>
         </div>
       </div>
 
-      <div class="card" data-cat="sneakers streetwear">
+      <div class="card" data-cat="vintage records" data-maps="Bungalow Kensington Market Toronto" data-social="Bungalow Kensington Toronto">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag sneakers">Sneakers</span><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">NRML</div><p class="nb">Multiple Locations</p><p class="vibe">Nike, Jordan, New Balance, Stussy — sneaker-first.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">Multiple locations, Toronto</div>
-            <p class="why">Reliable read on what's actually good right now versus just hyped. <b>Worth a stop between the bigger destinations</b> if you're near one of the storefronts.</p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=NRML%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag vintage">Vintage</span><span class="tag records">Records</span></div><div><div class="name">Bungalow</div><p class="nb-lbl">Kensington Market</p><p class="vibe">'70s and '80s clothing, plus furniture, housewares, and records.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Kensington Market</div><p class="why">The one Kensington shop where you leave with a jacket <b>and</b> a lamp <b>and</b> a record. Priced like they want you to.</p></div>
         </div>
       </div>
 
-      <div class="card" data-cat="galleries">
+      <div class="card" data-cat="streetwear vintage" data-maps="Rerun streetwear consignment Kensington Market Toronto" data-social="Rerun Toronto streetwear">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">401 Richmond</div><p class="nb">Queen West</p><p class="vibe">A warehouse full of small independent galleries and studios.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">401 Richmond St W, Toronto</div>
-            <p class="why">This is an artist's building, not a museum — working studios behind the galleries. <b>Closer to how you two actually spend a day than any single exhibit.</b></p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=401%20Richmond%20St%20W%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag streetwear">Streetwear</span><span class="tag vintage">Vintage</span></div><div><div class="name">Rerun</div><p class="nb-lbl">Kensington Market</p><p class="vibe">Streetwear consignment — the deep-cut brand list.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Kensington Market</div><p class="why">Consignment means it's what Toronto kids actually wore and let go of. <b>Cheaper than retail, and a better read on the city's taste</b> than any flagship.</p></div>
         </div>
       </div>
 
-      <div class="card" data-cat="galleries">
+      <div class="card" data-cat="photo culture" data-maps="Garden Car Kensington Market Toronto" data-social="Kensington Market garden car">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">Art Gallery of Ontario</div><p class="nb">Dundas St W</p><p class="vibe">The big one — strong contemporary collection.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">317 Dundas St W, Toronto</div>
-            <p class="why">If you've only got time for one museum-scale stop, this covers the most ground. <b>Give it the afternoon, not the hour.</b></p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=Art%20Gallery%20of%20Ontario%20317%20Dundas%20St%20W%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag photo">Photo Op</span><span class="tag culture">Culture</span></div><div><div class="name">The Garden Car</div><p class="nb-lbl">Augusta Ave area</p><p class="vibe">A car turned into a planter, graffiti'd, parked in front of a mural.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Kensington Market (ask anyone)</div><p class="why">The most-photographed object in the neighborhood and somehow still not cheesy. <b>Shoot it, then turn around — the mural behind it is the real piece.</b></p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="markets culture" data-maps="Kensington Market Toronto" data-social="Pedestrian Sundays Kensington">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag markets">Markets</span><span class="tag culture">Culture</span></div><div><div class="name">Pedestrian Sundays</div><p class="nb-lbl">Last Sunday · May–Oct</p><p class="vibe">Streets close to cars, vendors and buskers take over. 12–7pm.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Sept 27 · Oct 25 (2026)</div><p class="why">Back after a year off. Independent sellers set up on the pavement — <b>the closest thing Toronto has to a cart-and-table scene</b>. If your dates land on one, rearrange the day.</p></div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- OSSINGTON / WEST END -->
-  <section class="nb">
-    <p class="eyebrow">Ossington · Lansdowne · Sterling Road</p>
+  <!-- SPADINA -->
+  <section class="nb" id="spadina">
+    <p class="eyebrow">Spadina Ave · Chinatown</p>
+    <h2>The Spadina Strip</h2>
+    <p class="intro">One avenue, four stops, the deepest record bins in the country. Bring an empty bag.</p>
+    <div class="grid">
+
+      <div class="card" data-cat="records culture" data-maps="Play De Record 411 Spadina Ave Toronto" data-social="Play De Record Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag records">Records</span><span class="tag culture">Culture</span></div><div><div class="name">Play De Record</div><p class="nb-lbl">411 Spadina Ave</p><p class="vibe">Since 1990. Hip-hop 12"s, dance, DJ gear, beatmaking classes.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">411 Spadina Ave</div><p class="why">Outlasted every other DJ shop in the city — this is the mixtape era's home base. <b>Nobody in Toronto goes deeper on hip-hop and dance vinyl.</b> Ask the counter what's moving locally.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="records" data-maps="Sonic Boom Records Spadina Ave Toronto" data-social="Sonic Boom Records Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag records">Records</span></div><div><div class="name">Sonic Boom</div><p class="nb-lbl">Chinatown</p><p class="vibe">Canada's largest indie record store. Multi-level, new and used.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Spadina Ave, Chinatown</div><p class="why">Deep stock, staff who know, a floor that's actually organized. <b>The generalist.</b> Cover-art wall alone is worth twenty minutes.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="streetwear" data-maps="Uncle Otis Spadina Ave Toronto" data-social="Uncle Otis Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag streetwear">Streetwear</span></div><div><div class="name">Uncle Otis</div><p class="nb-lbl">Spadina Ave</p><p class="vibe">Toronto streetwear OG, running since 1991.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Spadina Ave</div><p class="why">Thirty-plus years of picking what lands here first. <b>The elder in the room</b> — worth seeing what a shop that survived every trend cycle keeps on the rack.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="streetwear" data-maps="Nomad 310 Spadina Ave Toronto" data-social="Nomad Toronto menswear">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag streetwear">Streetwear</span></div><div><div class="name">Nomad</div><p class="nb-lbl">310 Spadina Ave</p><p class="vibe">High fashion crossed with street, Stussy next to Japanese denim.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">310 Spadina Ave</div><p class="why">Elevated menswear that doesn't pick a lane — tailored outerwear racked next to skate labels. <b>Curation itself is the craft here.</b></p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUEEN WEST -->
+  <section class="nb" id="queenwest">
+    <p class="eyebrow">Queen St W · Richmond · Dundas</p>
+    <h2>Queen West</h2>
+    <p class="intro">Denim history, rare-groove bins, the alley everyone photographs, an artist's warehouse, and the big museum — all walkable.</p>
+    <div class="grid">
+
+      <div class="card" data-cat="photo culture" data-maps="Graffiti Alley Rush Lane Toronto" data-social="Graffiti Alley Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag photo">Photo Op</span><span class="tag culture">Culture</span></div><div><div class="name">Graffiti Alley</div><p class="nb-lbl">Rush Lane, behind Queen W</p><p class="vibe">A laneway of murals that gets painted over constantly.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Rush Lane, parallel to Queen W</div><p class="why"><b>Go early morning</b> — empty enough to step back and shoot the big walls without a crowd in frame. It's never the same alley twice, so whatever's up is up only for you.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="vintage streetwear sneakers" data-maps="Over the Rainbow Queen Street West Toronto" data-social="Over the Rainbow Toronto denim">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag vintage">Vintage</span><span class="tag streetwear">Streetwear</span></div><div><div class="name">Over the Rainbow</div><p class="nb-lbl">Queen St W</p><p class="vibe">Denim and workwear institution, wall of sneakers.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Queen St W</div><p class="why">Raw denim and workwear since before it was a trend cycle — they'll tell you why a selvedge seam is cut the way it is. <b>Craft history you can hold.</b></p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="records" data-maps="Kops Records Queen Street West Toronto" data-social="Kops Records Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag records">Records</span></div><div><div class="name">Kops Records</div><p class="nb-lbl">Queen St W</p><p class="vibe">Toronto's oldest indie vinyl shop, open since 1976.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Queen St W</div><p class="why">Second only to Sonic Boom for depth, first for feeling like a shop that's been here fifty years. <b>Ask about the 45s.</b></p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="records" data-maps="Cosmos Records Queen Street West Toronto" data-social="Cosmos Records Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag records">Records</span></div><div><div class="name">Cosmos Records</div><p class="nb-lbl">Queen St W</p><p class="vibe">Rare soul, funk, disco, hip-hop. Collector-grade.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Queen St W</div><p class="why">This is where the samples come from. <b>Rare-groove bins that producers fly in for.</b> Not cheap, but you're not here for cheap.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="sneakers streetwear" data-maps="NRML Toronto" data-social="NRML Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag sneakers">Sneakers</span><span class="tag streetwear">Streetwear</span></div><div><div class="name">NRML</div><p class="nb-lbl">Multiple locations</p><p class="vibe">Nike, Jordan, New Balance, Stussy — sneaker-first.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Multiple locations</div><p class="why">Reliable read on what's actually good versus just hyped. <b>Worth a stop between the bigger destinations.</b></p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="galleries" data-maps="401 Richmond St W Toronto" data-social="401 Richmond Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag galleries">Galleries</span></div><div><div class="name">401 Richmond</div><p class="nb-lbl">401 Richmond St W</p><p class="vibe">A warehouse full of small independent galleries and studios.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">401 Richmond St W</div><p class="why">An artist's building, not a museum — working studios behind the galleries. <b>Closer to how you two actually spend a day than any single exhibit.</b></p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="galleries" data-maps="Art Gallery of Ontario 317 Dundas St W Toronto" data-social="AGO Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag galleries">Galleries</span></div><div><div class="name">Art Gallery of Ontario</div><p class="nb-lbl">317 Dundas St W</p><p class="vibe">The big one — strong contemporary collection.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">317 Dundas St W</div><p class="why">If you've only got time for one museum-scale stop, this covers the most ground. <b>Give it the afternoon, not the hour.</b></p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WEST END -->
+  <section class="nb" id="westend">
+    <p class="eyebrow">Ossington · Dundas West · Lansdowne · Sterling Rd</p>
     <h2>The West End</h2>
-    <p class="intro">Minimal sneaker shops, secondhand, and the contemporary museum built inside an old auto factory. Low pressure, very local.</p>
+    <p class="intro">Where the city's makers actually live. A skate shop that hand-prints its own merch, minimal sneakers, secondhand digs, and a museum in an old auto plant.</p>
     <div class="grid">
 
-      <div class="card" data-cat="sneakers">
+      <div class="card" data-cat="streetwear culture" data-maps="Blue Tile Lounge 822 Dundas St W Toronto" data-social="Blue Tile Lounge Toronto">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag sneakers">Sneakers</span></div>
-            <div><div class="name">Livestock</div><p class="nb">Ossington Strip</p><p class="vibe">Spacious, minimal — Nike, New Balance, Asics.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">Ossington Strip, Toronto</div>
-            <p class="why">Curated, not overstuffed — this is a lead pick. <b>The store itself is a lesson in editing</b>, which is half of what good design is.</p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=Livestock%20Ossington%20Ave%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag streetwear">Streetwear</span><span class="tag culture">Culture</span></div><div><div class="name">Blue Tile Lounge</div><p class="nb-lbl">822 Dundas St W</p><p class="vibe">Skate shop. Merch screen-printed by hand, in-house.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">822 Dundas St W, near Dunbat skatepark</div><p class="why">Started as a skatepark in '97, now a shop where <b>the manager pulls the prints himself</b> — city-pride tees, local boards, Canadian-made gear. This is the PJ model, Toronto edition. Talk shop.</p></div>
         </div>
       </div>
 
-      <div class="card" data-cat="vintage sneakers streetwear">
+      <div class="card" data-cat="sneakers" data-maps="Livestock Ossington Ave Toronto" data-social="Livestock Toronto sneakers">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag vintage">Vintage</span></div>
-            <div><div class="name">ReLife</div><p class="nb">Near Lansdowne</p><p class="vibe">Vintage streetwear, graphic tees, Patagonia, bags.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">Near Lansdowne station, Toronto</div>
-            <p class="why">Dig-through-it secondhand rather than curated racks. <b>Good for finding raw material</b>, not just clothes — the kind of texture that ends up in a collage.</p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=ReLife%20Toronto%20Lansdowne" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag sneakers">Sneakers</span></div><div><div class="name">Livestock</div><p class="nb-lbl">Ossington Strip</p><p class="vibe">Spacious, minimal — Nike, New Balance, Asics.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Ossington Ave</div><p class="why">Curated, not overstuffed — a lead pick. <b>The store itself is a lesson in editing</b>, which is half of what good design is.</p></div>
         </div>
       </div>
 
-      <div class="card" data-cat="galleries">
+      <div class="card" data-cat="records" data-maps="Rotate This Ossington Ave Toronto" data-social="Rotate This Toronto">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">MOCA Toronto</div><p class="nb">Sterling Road</p><p class="vibe">Five floors in an old auto building. First floor's free.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">158 Sterling Road, Toronto</div>
-            <p class="why">Forward-thinking, international and Canadian work in a building that hasn't been over-renovated into a white box. <b>Free Friday nights bring live performances</b> — worth timing around if your dates line up.</p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=MOCA%20Toronto%20158%20Sterling%20Road" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag records">Records</span></div><div><div class="name">Rotate This</div><p class="nb-lbl">Ossington Strip</p><p class="vibe">Indie new releases, shelves packed to the ceiling.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Ossington Ave</div><p class="why">The new-release shop — <b>what independent bands are pressing right now</b>, not the reissue rack. Two doors from Livestock; do both.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="vintage sneakers streetwear" data-maps="ReLife Toronto Lansdowne" data-social="ReLife Toronto vintage">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag vintage">Vintage</span></div><div><div class="name">ReLife</div><p class="nb-lbl">Near Lansdowne</p><p class="vibe">Vintage streetwear, graphic tees, Patagonia, bags.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Near Lansdowne station</div><p class="why">Dig-through-it secondhand rather than curated racks. <b>Good for finding raw material</b> — the texture that ends up in a collage.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="galleries" data-maps="MOCA Toronto 158 Sterling Road" data-social="MOCA Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag galleries">Galleries</span></div><div><div class="name">MOCA Toronto</div><p class="nb-lbl">158 Sterling Rd</p><p class="vibe">Five floors in an old auto building. First floor's free.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">158 Sterling Road</div><p class="why">Forward-thinking work in a building that hasn't been over-renovated into a white box. <b>Free Friday nights bring live performances</b> — time it if you can.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="records" data-maps="Dead Dog Records Toronto" data-social="Dead Dog Records Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag records">Records</span></div><div><div class="name">Dead Dog Records</div><p class="nb-lbl">Bloor West</p><p class="vibe">"Where Toronto gets its records." Neighborhood shop, real regulars.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Bloor St W</div><p class="why">Less a destination than a local — <b>the shop the people who work at the other shops go to.</b> Good used bins.</p></div>
         </div>
       </div>
 
     </div>
-    <div class="aside"><b>Also worth a wander:</b> Bloordale and Parkdale, just south and west of here, are full of smaller artist-run and emerging-artist galleries. No big names, no pressure — the kind of spaces worth a slow walk-through if you've got the time to spare.</div>
+    <div class="aside"><b>Also worth a wander:</b> Bloordale and Parkdale, just around here, are full of smaller artist-run and emerging-artist galleries. No big names, no pressure. And the label to hunt on Instagram: <b>Adidem Asterisks</b> — Toronto-born, chainstitched caps and selvedge shorts, no permanent storefront, pops up.</div>
   </section>
 
-  <!-- LESLIEVILLE -->
-  <section class="nb">
+  <!-- CORE -->
+  <section class="nb" id="core">
+    <p class="eyebrow">Downtown Core · Bathurst &amp; Front · City Hall</p>
+    <h2>The Core</h2>
+    <p class="intro">Two you can't skip and one you'll be glad you didn't.</p>
+    <div class="grid">
+
+      <div class="card" data-cat="markets culture streetwear" data-maps="Stackt Market 28 Bathurst St Toronto" data-social="Stackt Market Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag markets">Markets</span><span class="tag culture">Culture</span></div><div><div class="name">Stackt Market</div><p class="nb-lbl">Bathurst &amp; Front</p><p class="vibe">Shipping-container market. Art, indie retail, events, a brewery.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Bathurst &amp; Front · shops 12–8, Tue–Sun</div><p class="why">100,000 sq ft of stacked containers, small brands renting a box each. <b>Rotating tenants, so it's whoever's hungry right now.</b> Good for scouting what a container storefront costs someone.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="photo" data-maps="Toronto Sign Nathan Phillips Square" data-social="Toronto sign Nathan Phillips Square">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag photo">Photo Op</span></div><div><div class="name">The TORONTO Sign</div><p class="nb-lbl">Nathan Phillips Square</p><p class="vibe">3D letters, City Hall behind it. Yes, it's the obvious one.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Nathan Phillips Square, Queen &amp; Bay</div><p class="why">Do it at night when it's lit and the curved towers glow. <b>Get it out of the way, then go find the weird stuff.</b></p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="streetwear culture" data-maps="OVO flagship store Toronto" data-social="OVO store Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag streetwear">Streetwear</span><span class="tag culture">Culture</span></div><div><div class="name">OVO</div><p class="nb-lbl">Four GTA locations</p><p class="vibe">Drake's label. The owl. The city's most exported brand.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Multiple GTA locations</div><p class="why">Love it or not, OVO is the case study in <b>how a city's sound became a clothing line</b>. Worth ten minutes to see the merchandising up close.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WATERFRONT -->
+  <section class="nb" id="water">
+    <p class="eyebrow">Harbourfront · Distillery · The Islands</p>
+    <h2>The Water End</h2>
+    <p class="intro">Free contemporary art on the lake, cobblestones for an afternoon, and the skyline shot everyone actually wants.</p>
+    <div class="grid">
+
+      <div class="card" data-cat="galleries" data-maps="The Power Plant Contemporary Art Gallery Toronto" data-social="The Power Plant Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag galleries">Galleries</span></div><div><div class="name">The Power Plant</div><p class="nb-lbl">Harbourfront</p><p class="vibe">Free year-round, non-collecting — always fresh.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Harbourfront Centre</div><p class="why">Nothing sits around — every visit is a different show. <b>No excuse not to duck in, it's free.</b></p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="galleries photo" data-maps="The Distillery District Toronto" data-social="Distillery District Toronto">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag galleries">Galleries</span><span class="tag photo">Photo Op</span></div><div><div class="name">Distillery District</div><p class="nb-lbl">Old Town</p><p class="vibe">Cobblestone, galleries, coffee — a whole afternoon.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Distillery District</div><p class="why">Thompson Landry and Arta Gallery anchor it, restaurants keep you fed between. <b>Best late afternoon into evening</b> when the brick goes gold.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="photo culture" data-maps="Jack Layton Ferry Terminal Toronto Islands" data-social="Toronto Islands skyline">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag photo">Photo Op</span><span class="tag culture">Culture</span></div><div><div class="name">Toronto Islands</div><p class="nb-lbl">Ferry from Queens Quay</p><p class="vibe">The skyline shot. Ten-minute ferry, whole different city.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Jack Layton Ferry Terminal</div><p class="why">The only way to see the whole skyline at once. <b>Ward's Island side is quieter</b>, more locals, cottages with no cars. Sunset ferry back is the photo.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="photo" data-maps="Polson Pier Toronto" data-social="Polson Pier skyline">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag photo">Photo Op</span></div><div><div class="name">Polson Pier</div><p class="nb-lbl">Port Lands</p><p class="vibe">Skyline from the east, no ferry required.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Polson St, Port Lands</div><p class="why">Drive-up skyline view, industrial foreground. <b>Blue hour, tripod if you've got one.</b> Backup if the ferry line is stupid.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EAST -->
+  <section class="nb" id="east">
     <p class="eyebrow">Leslieville</p>
     <h2>East End, Slower Pace</h2>
-    <p class="intro">One stop, but a good one — sustainable basics with more restraint than most streetwear.</p>
+    <p class="intro">One stop, but a good one.</p>
     <div class="grid">
-
-      <div class="card" data-cat="streetwear">
+      <div class="card" data-cat="streetwear" data-maps="Kotn Leslieville Toronto" data-social="Kotn Toronto">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag streetwear">Streetwear</span></div>
-            <div><div class="name">Kotn</div><p class="nb">Leslieville</p><p class="vibe">Egyptian cotton basics, calm and design-considered.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">Leslieville, Toronto (also Yorkdale)</div>
-            <p class="why">Sustainable essentials done with real material rigor — closer to a design studio's supply-chain thinking than a typical basics brand. <b>Quiet, well-made, no logo screaming at you.</b></p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=Kotn%20Leslieville%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag streetwear">Streetwear</span></div><div><div class="name">Kotn</div><p class="nb-lbl">Leslieville · also Yorkdale</p><p class="vibe">Egyptian cotton basics, calm and design-considered.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Leslieville (also Yorkdale)</div><p class="why">Sustainable essentials with real material rigor — closer to a design studio's supply-chain thinking than a basics brand. <b>Quiet, well-made, no logo screaming.</b></p></div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- HARBOURFRONT / DISTILLERY -->
-  <section class="nb">
-    <p class="eyebrow">Harbourfront · Distillery District</p>
-    <h2>The Water End</h2>
-    <p class="intro">Free contemporary art on the lake, and a cobblestone district you can lose an entire afternoon in.</p>
+  <!-- SCARBOROUGH -->
+  <section class="nb" id="scarborough">
+    <p class="eyebrow">Scarborough · The GTA proper</p>
+    <h2>Scarborough</h2>
+    <p class="intro">Downtown is the storefront. Scarborough is the engine — where the food, the sound, and half the artists come from. Drive out.</p>
     <div class="grid">
 
-      <div class="card" data-cat="galleries">
+      <div class="card" data-cat="photo culture" data-maps="Scarborough Bluffs Park Toronto" data-social="Scarborough Bluffs">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">The Power Plant</div><p class="nb">Harbourfront</p><p class="vibe">Free year-round, non-collecting — always fresh.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">Harbourfront, Toronto</div>
-            <p class="why">Because it doesn't collect, nothing sits around — every visit is a different show, Canadian and international. <b>No excuse not to duck in, it's free.</b></p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=The%20Power%20Plant%20Contemporary%20Art%20Gallery%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag photo">Photo Op</span><span class="tag culture">Culture</span></div><div><div class="name">Scarborough Bluffs</div><p class="nb-lbl">Bluffer's Park</p><p class="vibe">White cliffs on Lake Ontario. Doesn't look like Canada.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Bluffer's Park, off Brimley Rd S</div><p class="why">Chalk-white cliffs, beach at the bottom, boathouses. <b>The one landscape shot in the whole trip.</b> Go from the beach level, not the top.</p></div>
         </div>
       </div>
 
-      <div class="card" data-cat="galleries">
+      <div class="card" data-cat="culture" data-maps="Patty Stop 5506 Lawrence Ave E Scarborough" data-social="Patty Stop Scarborough">
         <div class="card-inner">
-          <div class="face front">
-            <div class="tags"><span class="tag galleries">Galleries</span></div>
-            <div><div class="name">Distillery District</div><p class="nb">Old Town</p><p class="vibe">Cobblestone, galleries, coffee — a whole afternoon.</p></div>
-            <span class="flip-hint">tap for details ↻</span>
-          </div>
-          <div class="face back">
-            <div class="addr">The Distillery District, Toronto</div>
-            <p class="why">Thompson Landry and Arta Gallery anchor it, but it's built for wandering — restaurants and coffee mixed in so you're not gallery-hopping on an empty stomach. <b>Best late afternoon into evening.</b></p>
-            <div class="links">
-              <a href="https://www.google.com/maps/search/?api=1&query=The%20Distillery%20District%20Toronto" target="_blank" rel="noopener">Maps + Reviews →</a>
-            </div>
-          </div>
+          <div class="face front"><div class="tags"><span class="tag culture">Culture</span></div><div><div class="name">Patty Stop</div><p class="nb-lbl">5506 Lawrence Ave E</p><p class="vibe">Jamaican patties, jerk chicken sandwich. Drake's pick.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">5506 Lawrence Ave E</div><p class="why">The patty is the GTA's snack the way the slice is New York's. Get the loaded patty. <b>Takeout only, eat in the car, no shame.</b></p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="streetwear culture" data-maps="Scarborough Town Centre" data-social="OVO Scarborough Town Centre">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag streetwear">Streetwear</span><span class="tag culture">Culture</span></div><div><div class="name">OVO East End</div><p class="nb-lbl">Scarborough Town Centre</p><p class="vibe">OVO's Scarborough pop-up — the East End collection, in the East End.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Scarborough Town Centre (seasonal — check before driving)</div><p class="why">Opened as a seasonal pop-up; may or may not be running when you're up. <b>Worth a check if you're already at the Bluffs</b>, not worth the drive alone.</p></div>
         </div>
       </div>
 
     </div>
+    <div class="aside"><b>The GTA in one sentence:</b> Toronto proper is where the shops are, but Scarborough, Brampton, and Mississauga are where the sound and the food actually come from. Anyone who tells you Toronto ends at the subway map hasn't eaten well.</div>
+  </section>
+
+  <!-- MARKETS -->
+  <section class="nb" id="markets">
+    <p class="eyebrow">Weekend Markets · People selling their own work</p>
+    <h2>Makers &amp; Markets</h2>
+    <p class="intro">This is the cart-and-table scene. Where people like you set up and sell what they made. Check dates before you plan around one.</p>
+    <div class="grid">
+
+      <div class="card" data-cat="markets" data-maps="Evergreen Brick Works Toronto" data-social="Ontario Vintage Market Brick Works">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag markets">Markets</span><span class="tag vintage">Vintage</span></div><div><div class="name">Brick Works Markets</div><p class="nb-lbl">Evergreen Brick Works</p><p class="vibe">Ontario Artisan Market + Ontario Vintage Market, biweekly Sundays May–Oct.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">550 Bayview Ave</div><p class="why">Old brick factory turned into a market grounds. Artisans one Sunday, vintage dealers the next. <b>Check which one's on for your Sunday</b> — both are good, the vintage one is better for you two.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="markets" data-maps="Trinity Bellwoods Park Toronto" data-social="Toronto Artisan Market">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag markets">Markets</span></div><div><div class="name">Toronto Artisan Market</div><p class="nb-lbl">Trinity Bellwoods · Christie Pits · rotating</p><p class="vibe">Outdoor curated series in the city's best parks.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">Rotates — check their site for the next park</div><p class="why">Curated, so the table quality is high. <b>Trinity Bellwoods dates are the ones to catch</b> — the park itself is the West End's living room.</p></div>
+        </div>
+      </div>
+
+      <div class="card" data-cat="markets galleries" data-maps="Riverdale Hub 1326 Gerrard St E Toronto" data-social="Riverdale Hub Sunday Artisan Market">
+        <div class="card-inner">
+          <div class="face front"><div class="tags"><span class="tag markets">Markets</span></div><div><div class="name">Riverdale Hub Sunday Market</div><p class="nb-lbl">Gerrard St E · 2nd Sunday monthly</p><p class="vibe">Handmade, original art, small-scale, low pressure.</p></div><span class="flip-hint">tap for details ↻</span></div>
+          <div class="face back"><div class="addr">1326 Gerrard St E</div><p class="why">Small, monthly, indoors — the opposite of a mega-market. <b>Where you meet the person who made it</b> and they have time to talk.</p></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="aside"><b>Off-calendar but worth knowing:</b> City of Craft (at The Theatre Centre) and the Toronto Dark Arts Market both run in the fall — search them before you leave. And Pedestrian Sundays in Kensington, up top, is the one that fits the cart-and-sidewalk spirit best.</div>
   </section>
 
   <footer>
-    Built for the drive up. Tap any card, it flips. Filters up top narrow the list.
+    Tap any card, it flips. Filters up top narrow the list; the dashed row jumps by neighborhood.<br>
+    IG and TikTok buttons are searches, not verified handles — the scene moves faster than any list. Maps links include reviews and hours.
   </footer>
 
 </main>
@@ -374,7 +501,20 @@ footer{margin-top:20px;padding-top:20px;border-top:1px solid var(--rule);color:v
 <script>
 (function(){
   var cards = document.querySelectorAll('.card');
+
   cards.forEach(function(card){
+    var back = card.querySelector('.face.back');
+    var maps = card.getAttribute('data-maps') || '';
+    var social = card.getAttribute('data-social') || maps;
+    var links = document.createElement('div');
+    links.className = 'links';
+    links.innerHTML =
+      '<a class="maps" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(maps) + '">Maps + Reviews</a>' +
+      '<a target="_blank" rel="noopener" href="https://www.instagram.com/explore/search/keyword/?q=' + encodeURIComponent(social) + '">IG</a>' +
+      '<a target="_blank" rel="noopener" href="https://www.tiktok.com/search?q=' + encodeURIComponent(social) + '">TikTok</a>';
+    back.appendChild(links);
+    links.addEventListener('click', function(e){ e.stopPropagation(); });
+
     card.addEventListener('click', function(){
       card.classList.toggle('flipped');
     });
